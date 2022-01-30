@@ -16,7 +16,7 @@ Reliable UDP File Transfer
   - `diff <file1> <file2>`
 - [simple tranfer](simple_transfer)
   - 簡單的transfer，每次傳送一個封包，便等待收到ack再傳下一個封包，若超時，則簡單判定封包丟失，重傳封包
-	- 可達成reliable的檔案傳輸，但在網路不穩時，效能極差
+  - 可達成reliable的檔案傳輸，但在網路不穩時，效能極差
 - [selective repeat transfer](selective_repeat_transfer)
   - 依照selective repeat的算法傳輸檔案，並使用類似tcp slow start的方式依據網路回饋調整傳輸檔案速度
   - 不同網路環境傳送1MB資料的表現
